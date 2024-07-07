@@ -1,0 +1,179 @@
+#myForm {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  place-content: center;
+  display: grid;
+  justify-items: center;
+  justify-content: space-around;
+  background-color: #f2dede;
+  border-radius: 8px;
+}
+
+#myForm:nth-child(n+1) {
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+#nip {
+  outline: none;
+  pointer-events: none;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.markedForm {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  margin: 5px;
+}
+
+.formDesign {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  place-content: center;
+  justify-items: center;
+  justify-content: space-around;
+  background-color: #f2dede;
+  border-radius: 8px;
+}
+
+.inputDesign {
+  outline: none;
+  pointer-events: none;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*  Card */
+.card {
+  /* --primary-clr: #1C204B; */
+  --primary-clr: #342316;
+  --dot-clr: #BBC0FF;
+  --play: hsl(195, 74%, 62%);
+  width: 200px;
+  height: 170px;
+  border-radius: 10px;
+}
+
+.card {
+  font-family: "Arial";
+  color: #fff;
+  display: grid;
+  cursor: pointer;
+  grid-template-rows: 50px 1fr;
+}
+
+.card:hover .img-section {
+  transform: translateY(1em);
+}
+
+.card-desc {
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  top: -10px;
+  display: grid;
+  gap: 10px;
+  background: var(--primary-clr);
+}
+
+.card-time {
+  font-size: 1.7em;
+  font-weight: 500;
+}
+
+.img-section {
+  transition: 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: hsl(195, 74%, 62%);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.card-title {
+  flex: 1;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.card-menu {
+  display: flex;
+  gap: 4px;
+  margin-inline: auto;
+}
+
+.card svg {
+  float: right;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card .dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--dot-clr);
+}
+
+.card .recent {
+  line-height: 0;
+  font-size: 0.8em;
+}
+
+.centered-content {
+  display: grid;
+  place-items: center;
+}
