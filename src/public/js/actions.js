@@ -340,7 +340,6 @@ document.addEventListener("click", async function (e) {
           formPostSend.reset();
           formPostSend.remove();
           document.querySelector("#responseInsufficient").innerHTML = data;
-          console.log(data);
         })
         .catch((error) => {
           formPostSend.reset();
