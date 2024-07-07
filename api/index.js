@@ -4,7 +4,7 @@ const express = require('express');
 const morgan = require('morgan');
 const { engine } = require('express-handlebars');
 const path = require('path');
-
+const daisyui = require('daisyui');
 // initialization
 const app = express();
 
@@ -47,6 +47,6 @@ app.listen(app.get('port'), () => {
 });
 
 
-
+module.exports = app;
 
 
