@@ -1,0 +1,55 @@
+<div class="centered-content">
+
+  <div class="formDesign">
+    <div class="">
+      <span class="font-bold" id="name">Bienvenido {{name}}</span>
+      <p id="pi" class="pi" hidden>{{nip}}</p>
+      <br />
+      <div class="grid w-full justify-center gap-4">
+        <div class="card-actions">
+        </div>
+      </div>
+    </div>
+  </div>
+    <br>
+
+  <div class="">
+    <div class="parent" style="width: 300px;">
+
+      <div
+        class="btn addValue w-full"
+        id="addValue"
+        data-uuid="{{nip}}"
+        data-element="{{name}}"
+      >
+        Depositar
+      </div>
+      <div class="btn addSend w-full" id="addSend" data-uuid="{{nip}}">
+        Retirar
+      </div>
+      <div
+        class="btn checkValue w-full"
+        id="checkValue"
+        data-uuid="{{nip}}"
+        data-element="{{name}}"
+      >
+        Consultar
+      </div>
+      <a href="/" class="btn removeValue w-full" id="removeValue">
+        Inicio
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+<form action="" id="formPost" hidden>
+  <input type="number" name="readElement" id="readElement" value="{{nip}}" />
+  <input
+    type="text"
+    name="readElementName"
+    id="readElementName"
+    value="{{name}}"
+  />
+</form>
