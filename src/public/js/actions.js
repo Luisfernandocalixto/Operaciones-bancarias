@@ -364,12 +364,14 @@ document.addEventListener("click", async function (e) {
 
 // add value to input
 function added(value) {
+
   let addedValue = document.getElementById("addedValue").value += value;
+  if (parseInt(addedValue) === 0) return
   if (addedValue.length > 0) {
     responseAdded.classList.remove("btn-disabled");
     responseAdded.classList.add("btn-neutral");
   }
-  document.getElementById("addedValue").value = addedValue;
+  document.getElementById("addedValue").value = parseInt(addedValue);
 }
 
 // remove value to input
@@ -390,7 +392,7 @@ function addedRest(value) {
     responseAddedRest.classList.remove("btn-disabled");
     responseAddedRest.classList.add("btn-neutral");
   }
-  document.getElementById("addedValueRest").value = addedValueRest;
+  document.getElementById("addedValueRest").value = parseInt( addedValueRest);
 }
 
 // remove value to input
