@@ -388,11 +388,11 @@ function removeValueAdded() {
 // add value to input
 function addedRest(value) {
   let addedValueRest = document.getElementById("addedValueRest").value += value;
-  if (addedValueRest.length > 0) {
+  if (parseInt(addedValueRest) > 0) {    
     responseAddedRest.classList.remove("btn-disabled");
     responseAddedRest.classList.add("btn-neutral");
   }
-  document.getElementById("addedValueRest").value = parseInt( addedValueRest);
+  document.getElementById("addedValueRest").value = parseInt(addedValueRest);
 }
 
 // remove value to input
