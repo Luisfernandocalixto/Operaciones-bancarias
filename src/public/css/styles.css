@@ -177,3 +177,46 @@
   display: grid;
   place-items: center;
 }
+
+.parentWidth {
+  width: 300px;
+
+}
+
+.contentHome {
+  display: grid;
+  justify-content: start;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.title_Home {
+  font-size: 30px;
+}
+
+.bg-indicator-primary {
+  background: #caaa6d;
+
+}
+
+.bg-indicator-second {
+  background: #775335;
+
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.hr-div {
+  border: 0.5px solid #cecdcc;
+  width: 35%;
+}
+
+.markedForm{
+  input[value="0"] {
+    margin-right: 80px;
+
+  }
+}
