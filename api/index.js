@@ -10,6 +10,8 @@ const app = express();
 
 // setting
 app.set('port', process.env.PORT || 3000);
+app.disable('x-powered-by');
+
 
 // detail order with /src
 
