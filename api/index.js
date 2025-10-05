@@ -36,7 +36,7 @@ app.use(express.json());
 app.use(require('../src/routes/links.js'));
 
 // public
-app.use(express.static(path.join(__dirname, '../src/public')));
+app.use(express.static(path.join(__dirname, '..' ,'src', 'public')));
 
 // page 404
 app.get((req, res) => {

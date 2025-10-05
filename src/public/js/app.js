@@ -17,7 +17,10 @@ document.addEventListener('DOMContentLoaded', async function () {
                 if (!response.ok) {
                     throw new Error('Error the data of server')
                 }
-                alertify.success('Success');
+                else{
+                    alertify.success('Success');
+
+                }
                 return response.text();
             }
             )
@@ -60,6 +63,11 @@ let responseBtn = document.querySelector("#response")
 function add(value) {
     let refactor1 = document.getElementById("nip").value += value;
     let refactor = refactor1.slice(0, 4);
+    if (refactor.startsWith("0")) {
+        const testValue = Array.from(refactor).filter(e => e !== "0");
+        refactor = testValue;
+    }
+
     if (refactor1.length > 3) {
         responseBtn.classList.remove("btn-disabled")
         responseBtn.classList.add("btn-neutral")
@@ -101,5 +109,5 @@ function nextSlide() {
 // Show of first image
 showSlide(currentSlide);
 
-// Change of image 5.5 segundos (5500 ms)
+// Change of image 5.5 seconds (5500 ms)
 setInterval(nextSlide, 5500);
