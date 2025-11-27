@@ -2,7 +2,6 @@
   width: 300px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 5px;
   place-content: center;
   display: grid;
   justify-items: center;
@@ -30,13 +29,17 @@
   justify-content: space-around;
   gap: 10px;
   margin: 5px;
+
+  input[value="0"] {
+    margin-right: 80px;
+
+  }
 }
 
 .formDesign {
   width: 300px;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 5px;
   place-content: center;
   justify-items: center;
   justify-content: space-around;
@@ -94,17 +97,12 @@
 
 /*  Card */
 .card {
-  /* --primary-clr: #1C204B; */
   --primary-clr: #342316;
   --dot-clr: #BBC0FF;
   --play: hsl(195, 74%, 62%);
   width: 200px;
   height: 170px;
   border-radius: 10px;
-}
-
-.card {
-  font-family: "Arial";
   color: #fff;
   display: grid;
   cursor: pointer;
@@ -214,9 +212,7 @@
   width: 35%;
 }
 
-.markedForm{
-  input[value="0"] {
-    margin-right: 80px;
-
-  }
+.btn-disabled{
+  color: white !important;
+  background: black !important;
 }

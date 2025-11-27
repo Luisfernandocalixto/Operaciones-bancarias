@@ -1,4 +1,4 @@
-import { formByAdd, formByDesign } from '/js/template/actions.mjs';
+import { formByAdd, formByDesign } from '/js/template/actions.js';
 document.addEventListener('DOMContentLoaded', function () {
 
   document.addEventListener("click", async function (e) {
